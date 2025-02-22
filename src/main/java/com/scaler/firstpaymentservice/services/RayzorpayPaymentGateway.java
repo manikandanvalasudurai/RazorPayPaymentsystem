@@ -26,6 +26,9 @@ public class RayzorpayPaymentGateway implements PaymentService{
         paymentLinkRequest.put("reference_id",orderId.toString());
         paymentLinkRequest.put("description","Payment of 1000000");
         JSONObject customer = new JSONObject();
+
+        //call the order service to get the details
+
         customer.put("name","MKV");
         customer.put("contact","+918888888888");
         customer.put("email","Demo@gmail.com");
